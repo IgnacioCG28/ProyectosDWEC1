@@ -13,9 +13,23 @@
     <h1>Página Inicial</h1>
     <h2>Titulin</h2>
     <p>Clase de DWEC</p>
+    <button id="cambiarColor">Cambiar color de fondo</button>
+
+     <!-- JavaScript en línea -->
+     <script>
+        document.getElementById('cambiarColor').addEventListener('click', function() {
+            var letras = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letras[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.backgroundColor = color;
+        });
+    </script>
+    
+    <br><br>
     <a href="CPR180923_00_Contacto.html">Contacto</a>
     <hr>
     <div><img src="CPR180923_00_birgImage.avif" alt="Pájaro"></div>
-    <div><audio controls src=""></audio></div>
-    <div><video controls src=""></video></div>
 </body>
+</html>
