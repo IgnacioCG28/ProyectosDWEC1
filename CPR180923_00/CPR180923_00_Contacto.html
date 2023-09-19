@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-</head>
-<body>
-    <audio src="" controls></audio>
-    <div><video src="" controls></video></div>
+    <link rel="stylesheet" href="CPR180923_00_styles.css" />
+  </head>
+  <body>
+    <button id="cambiarColor">Cambiar color de fondo</button>
+
+    <!-- JavaScript en línea -->
+    <script>
+      document
+        .getElementById("cambiarColor")
+        .addEventListener("click", function () {
+          var letras = "0123456789ABCDEF";
+          var color = "#";
+          for (var i = 0; i < 6; i++) {
+            color += letras[Math.floor(Math.random() * 16)];
+          }
+          document.body.style.backgroundColor = color;
+        });
+    </script>
+    <br /><br />
+    <div><audio class="media" src="audio.mp3" controls></audio></div>
+    <br />
+    <div><video class="media" src="video.mp4" controls height="150"></video></div>
+    <br>
     <a href="CPR180923_00_index.html">Inicio</a>
-</body>
+    <br /><br />
+    <div><img src="cat.jpg" alt="Gato tonto" /></div>
+  </body>
 </html>

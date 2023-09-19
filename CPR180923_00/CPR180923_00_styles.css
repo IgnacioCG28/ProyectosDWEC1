@@ -13,7 +13,8 @@ h2{
 }
 
 p{
-    color: whitesmoke;
+    box-shadow: 10px 10px 10px 0px rgb(78, 22, 22);
+    background-image: linear-gradient(to right, rgb(175, 33, 180) , rgb(210, 43, 51));
 }
 
 img {
@@ -24,3 +25,10 @@ img {
 img:hover {
     box-shadow: 0 0 10px 5px rgba(18, 135, 3, 0.5);
   }
+
+  .media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
