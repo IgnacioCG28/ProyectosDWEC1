@@ -7,28 +7,19 @@
     <link rel="stylesheet" href="CPR180923_00_styles.css" />
   </head>
   <body>
-    <button id="cambiarColor">Cambiar color de fondo</button>
-
-    <!-- JavaScript en línea -->
-    <script>
-      document
-        .getElementById("cambiarColor")
-        .addEventListener("click", function () {
-          var letras = "0123456789ABCDEF";
-          var color = "#";
-          for (var i = 0; i < 6; i++) {
-            color += letras[Math.floor(Math.random() * 16)];
-          }
-          document.body.style.backgroundColor = color;
-        });
-    </script>
+    <button id="changeColorBtn" onclick="changeBackgroundColor()">
+      Cambiar color de fondo
+    </button>
     <br /><br />
-    <div><audio class="media" src="audio.mp3" controls></audio></div>
+    <div><audio class="media" src="/media/audio.mp3" controls></audio></div>
     <br />
-    <div><video class="media" src="video.mp4" controls height="150"></video></div>
-    <br>
+    <div>
+      <video class="media" src="/media/video.mp4" controls height="150"></video>
+    </div>
+    <br />
     <a href="CPR180923_00_index.html">Inicio</a>
     <br /><br />
-    <div><img src="cat.jpg" alt="Gato tonto" /></div>
+    <div class="centered-container"><img src="/media/cat.jpg" alt="Gato tonto" /></div>
+    <script src="index.js"></script>
   </body>
 </html>
