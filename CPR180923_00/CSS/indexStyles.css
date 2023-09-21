@@ -39,3 +39,11 @@ img:hover {
 img {
     border-radius: 16px;
 }
+
+.no-underline{
+    text-decoration: none;
+}
+
+.block{
+    display: block;
+}
