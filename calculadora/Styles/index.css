@@ -1,0 +1,100 @@
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --gray: #757575;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /*1 rem = 10px*/
+  font-family: "Courier New", Courier, monospace;
+  background-image: linear-gradient(to top, var(--white) 0%,var(--gray),var(--black) 70%);
+}
+
+i{
+    font-size: 3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+button{
+    height: 6rem;
+    width: 7rem;
+    border: 0;
+    border-radius: 1%;
+    margin: .01rem;
+    font-size: large;
+}
+
+.container {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px;
+    background-color: rgb(242, 237, 237);
+}
+
+#display{
+    background-color: whitesmoke;
+    color: var(--black);
+    width: 29.5rem;
+    height: 5rem;
+    border: var(--white);
+    text-align: right;
+    font-size: 4rem;
+    padding-right: 1rem;
+}
+#first-display{
+    background-color: whitesmoke;
+    color: var(--black);
+    width: 29.5rem;
+    height: 5rem;
+    text-align: right;
+    font-size: 2rem;
+    border: var(--white);
+    padding-right: 1rem;
+} 
+
+.btn-number{
+background-color: var(--white);
+color: var(--black);
+}
+.btn-operator{
+background-color: whitesmoke;
+color: var(--black);
+}
+
+.btn-result{
+    background-color: rgb(41, 41, 197);
+    color: var(--white);
+}
+
+/*tema oscuro*/
+.calculator .dark{
+background-color: var(--black);
+}
+
