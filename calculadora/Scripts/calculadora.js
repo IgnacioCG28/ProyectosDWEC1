@@ -1,12 +1,17 @@
+/** 
+ *  Autor: Ignacio Carmona González 2º DAW
+ *  GitHub: 
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const display = document.getElementById("display");
-  const fdisplay = document.getElementById("first-display");
+  const Sdisplay = document.getElementById("second-display");
   const buttons = document.querySelectorAll("button");
 
   buttons.forEach((item) => {
     item.onclick = () => {
       if (item.id == "clear") {
-        fdisplay.value = "";
+        Sdisplay.value = "";
         display.value = "";
       } else if (item.id == "clear-digit") {
         let string = display.value.toString();
@@ -14,13 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (item.id == "clear-entry") {
         display.value = "";
       } else if (display.value != "" && item.id == "equal") {
-        fdisplay.value = display.value;
+        Sdisplay.value = display.value;
         display.value = eval(display.value);
       } else if (display.value == "" && item.id == "equal") {
         display.value = "Null";
         setTimeout(() => (display.value = ""), 2000);
       } else if (item.id == "percentage") {
-        fdisplay.value = display.value;
+        Sdisplay.value = display.value;
         const input = display.value;
         const percentageValue = parseFloat(input) / 100;
         display.value = percentageValue;
@@ -30,14 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const powerValue = parseFloat(input) * input;
         display.value = powerValue;
       } else if (item.id == "square-root") {
-        fdisplay.value = display.value;
+        Sdisplay.value = display.value;
         input = display.value;
         const rootResult = Math.sqrt(input, 2);
         display.value = rootResult;
-      } else if (item.id == "derivative") {
-        fdisplay.value = display.value;
+      } else if (item.id == "inverse") {
+        Sdisplay.value = display.value;
         input = display.value;
-        const deriResult = -1 / (parseFloat(input) ^ 2);
+        const inverResult = 1/ (parseFloat(input));
         display.value = deriResult;
       } else if (item.id == "positive-negative") {
         input = display.value;
@@ -49,13 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   });
-
-  const toggle = document.getElementById("toggleDark");
   
-
-  toggle.addEventListener('click', function(){
-    this.classList.toggle('bi-moon-fill');
-
-  });
-
 });

@@ -9,12 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="calculator dark">
-        <div class="theme-toggler active">
-            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
-        </div>
+      <div class="calculator">
         <div class="display-screen">
-            <input type="text" id="first-display">
+          <p>
+            <i class="bi bi-list"></i>
+            Estándar
+            <i class="bi bi-arrow-counterclockwise"></i>
+          </p>
+            <input type="text" id="second-display">
             <br>
             <input type="text" id="display">
         </div>
@@ -28,7 +30,7 @@
             </tr>
 
             <tr>
-                <td><button type="button" class="btn-operator" id="derivative">¹/x</button></td>
+                <td><button type="button" class="btn-operator" id="inverse">¹/x</button></td>
                 <td><button type="button" class="btn-operator" id="power">x²</button></td>
                 <td><button type="button" class="btn-operator" id="square-root">²√x</button></td>
                 <td><button type="button" class="btn-operator" id="/">÷</button></td>               
@@ -66,6 +68,6 @@
       </div>
     </div>
 
-    <script src="/Scripts/calculadora.js"></script>
+    <script src="/Scripts/index.js"></script>
   </body>
 </html>
